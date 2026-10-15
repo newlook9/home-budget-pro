@@ -27,3 +27,11 @@ git push -u origin main
 Note: each browser/device/site address keeps its own data. Data saved from the local file is not shared with the GitHub Pages link; move it with a JSON backup.
 
 Developed by Muhammad Ashraf - 03083286645
+
+## Install as an app (PWA) / ایپ کی طرح انسٹال
+After opening the GitHub Pages link once with internet, the app is cached and works fully offline.
+- **Android (Chrome):** menu (three dots) -> *Install app* / *Add to Home screen*.
+- **iPhone (Safari):** Share -> *Add to Home Screen*.
+- **Windows/Mac (Chrome/Edge):** install icon in the address bar.
+Service worker needs `https` (GitHub Pages is https); it does not run from a local `file://` copy.
+To force an update after changing `index.html`, increase the version number of `hbp-v2` in `sw.js` (e.g. `hbp-v3`).
